@@ -54,7 +54,7 @@ exports.registerAppointment = async (req, res) => {
         res.status(500).json({ error: 'Something went wrong. Please try again later.' });
     }
 };
-// Get all appointments
+// Programari
 exports.getAppointments = async (req, res) => {
     try {
         const [rows] = await db.query('SELECT * FROM programari');
